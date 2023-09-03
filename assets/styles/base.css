@@ -1,0 +1,65 @@
+:root {
+  --bg-main-color: #5c87b2;
+  --text-primary-color: #000000;
+  --text-secondary-color: #8c7f7f;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+span {
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+div {
+  border-radius: 1rem;
+}
+
+button,
+input {
+  padding: 0.2em 0.5em;
+  font-size: 1rem;
+  font-family: "Helvetica Neue", sans-serif;
+  border: 1px solid var(--text-secondary-color);
+  border-radius: 0.5rem;
+}
+
+button,
+td {
+  cursor: pointer;
+}
+
+tbody tr:hover,
+tr:active {
+  background: #ffe9e9;
+}
+
+.selected {
+  background: #ffe9e9;
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 1.5rem;
+  }
+}

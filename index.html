@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <title>Pair manager</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__window">
+        <h1>Test</h1>
+        <div class="wrapper__window__content">
+          <div class="wrapper__window__content_create">
+            <div class="wrapper__window__content_create_input">
+              <label for="create"><p>Name/Value Pair</p> </label>
+              <input type="text" id="create" placeholder="Name=Value" />
+            </div>
+            <div class="wrapper__window__content_create_buttons-wrapper">
+              <button id="add">Add</button>
+            </div>
+          </div>
+          <div class="wrapper__window__content_manage">
+            <p>Name/Value Pair List</p>
+            <div class="wrapper__window__content_manage_content">
+              <div class="table-wrapper">
+                <div class="table-scroll">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th><b>Name</b></th>
+                        <th><b>Value</b></th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+              <div
+                class="wrapper__window__content_manage_content_buttons-wrapper"
+              >
+                <button id="sortByName">Sort By Name</button>
+                <button id="sortByValue">Sort By Value</button>
+                <button id="delete">Delete</button>
+                <button id="showXml">Show XML</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay hidden">
+      <div class="modal-overlay__content">
+        <h2>XML code</h2>
+        <div></div>
+        <button id="closeModal">Close</button>
+      </div>
+    </div>
+    <script type="module" src="assets/scripts/index.js"></script>
+  </body>
+</html>

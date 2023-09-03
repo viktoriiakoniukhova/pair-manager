@@ -1,0 +1,19 @@
+.table-scroll::-webkit-scrollbar,
+.modal-overlay__content > div::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+.table-scroll::-webkit-scrollbar-thumb,
+.modal-overlay__content > div::-webkit-scrollbar-thumb {
+  background-color: var(--bg-main-color);
+  border-radius: 2rem;
+}
+
+.table-scroll::-webkit-scrollbar-track,
+.modal-overlay__content > div::-webkit-scrollbar-track {
+  margin: 5px 0;
+  background-color: var(--text-secondary-color);
+  width: 5px;
+  border-radius: 2rem;
+}

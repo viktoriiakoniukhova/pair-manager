@@ -1,0 +1,132 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  background-color: var(--bg-main-color);
+}
+
+.wrapper__window {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1em;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #ffffff;
+  min-width: 50%;
+  overflow-y: hidden;
+}
+
+.wrapper__window__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5em;
+}
+
+.wrapper__window__content_create {
+  display: flex;
+  gap: 0.5em;
+  align-items: flex-end;
+}
+
+.wrapper__window__content_create_input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  flex: 0.7;
+}
+
+.wrapper__window__content_create_buttons-wrapper {
+  display: flex;
+  flex: 0.3;
+  justify-content: center;
+}
+.wrapper__window__content_create_buttons-wrapper > button {
+  flex: 1;
+}
+
+.wrapper__window__content_manage {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5em;
+}
+
+.wrapper__window__content_manage_content {
+  display: flex;
+  /* flex: 1; */
+  gap: 0.5em;
+}
+
+.table-wrapper {
+  border: 1px solid var(--text-secondary-color);
+  border-radius: 0.5rem;
+  display: flex;
+  flex: 0.7;
+}
+
+.table-scroll {
+  flex: 1;
+}
+
+.wrapper__window__content_manage_content_buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: min-content;
+  gap: 0.5em;
+  flex: 0.3;
+}
+
+.wrapper__window__content_manage_content_buttons-wrapper > button {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper__window {
+    margin: 2em 5em;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper__window {
+    margin: 2em 3em;
+    flex: 1;
+  }
+  .wrapper__window__content_create {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .wrapper__window__content_create_input {
+    flex: unset;
+  }
+
+  .wrapper__window__content_create_buttons-wrapper {
+    display: flex;
+    flex: unset;
+    justify-content: center;
+  }
+
+  .wrapper__window__content_manage_content {
+    flex-direction: column-reverse;
+  }
+  .wrapper__window__content_manage_content_buttons-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .wrapper__window__content_manage_content_buttons-wrapper > button {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wrapper__window {
+    margin: 1em;
+    padding: 1em;
+    flex: 1;
+  }
+}

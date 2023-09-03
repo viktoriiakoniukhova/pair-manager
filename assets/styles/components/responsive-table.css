@@ -1,0 +1,38 @@
+.table-wrapper {
+  position: relative;
+}
+.table-scroll {
+  height: 250px;
+  overflow: auto;
+  border-radius: 0.5rem;
+}
+.table-wrapper table {
+  width: 100%;
+}
+
+th,
+td {
+  padding: 0.2em 0.5em;
+  width: 50%;
+}
+
+table {
+  position: relative;
+  background-color: #fafad2;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  background-color: #fafad2;
+}
+
+tbody > tr {
+  background-color: white;
+}
+
+@media screen and (max-width: 425px) {
+  .table-scroll {
+    height: 250px;
+  }
+}
